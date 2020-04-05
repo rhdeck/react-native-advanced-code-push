@@ -1,0 +1,22 @@
+{
+  "name": "@react-native-kotlin/code-push",
+  "version": "1.0.0",
+  "description": "Code Push plugin for react-native-kotlin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhdeck/react-native-kotlin-code-push.git"
+  },
+  "author": "Ray Deck",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rhdeck/react-native-kotlin-code-push/issues"
+  },
+  "homepage": "https://github.com/rhdeck/react-native-kotlin-code-push#readme",
+  "dependencies": {
+    "xml2js": "^0.4.23"
+  }
+}

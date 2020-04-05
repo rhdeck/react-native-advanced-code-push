@@ -1,2 +1,3 @@
-# react-native-kotlin-code-push
- Codepush hooks for react-native-kotlin
+# react-native-advanced-code-push
+
+Codepush hooks for react-native-advanced

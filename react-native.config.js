@@ -3,11 +3,11 @@ const { join } = require("path");
 const { sync: glob } = require("glob");
 const { spawnSync } = require("child_process");
 const { existsSync, readFileSync, writeFileSync } = require("fs");
-const { join } = require("path");
+const Plist = require("plist");
 module.exports = {
   advanced: {
     startupClasses: ["RNSCodePush.RNSCodePush"],
-    prelink: (path = process.cwd()) => {
+    prelink: ({ path = process.cwd() }) => {
       //Update a couple of key files.
       //Look for the
       const sgPath = join(path, "android", "settings.gradle");

@@ -10,7 +10,7 @@ import java.util.Collections;
 import java.util.List;
 import com.microsoft.codepush.react.CodePush;
 
-class RNKCodePushPackage implements ReactPackage, RNKPackageInterface {
+public class RNKCodePushPackage implements ReactPackage, RNKPackageInterface {
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
         return Collections.emptyList(); 

@@ -39,7 +39,7 @@ module.exports = {
                 a
                   .map(
                     ({ name, owner: { name: ownerName } }) =>
-                      "\t react-native set-ios-code-push-key --appName " +
+                      "\t react-native set-android-code-push-key --appName " +
                       [ownerName, name].join("/")
                   )
                   .join("\n")
@@ -88,7 +88,7 @@ module.exports = {
               a2
                 .map(
                   ([stage]) =>
-                    "\treact-native set-ios-code-push-key --appName " +
+                    "\treact-native set-android-code-push-key --appName " +
                     appName +
                     " --stage " +
                     stage
@@ -103,7 +103,7 @@ module.exports = {
         }
         if (key) {
           const paths = glob(
-            yjoin(
+            join(
               process.cwd(),
               "android",
               "app",
@@ -112,7 +112,8 @@ module.exports = {
               "**",
               "strings.xml"
             )
-          ).paths.forEach(async (path) => {
+          );
+          paths.forEach(async (path) => {
             const xml = readFileSync(path, { encoding: "utf8" });
 
             const o = await xml2js.parseStringPromise(xml);
@@ -122,7 +123,7 @@ module.exports = {
               ({ $: { name } }) => name === "CodePushDeploymentKey"
             );
             if (!myString) {
-              strings.push({ $: { name: "CodePushDeploymentKey" }, _: ke });
+              strings.push({ $: { name: "CodePushDeploymentKey" }, _: key });
             } else {
               myString._ = key;
             }

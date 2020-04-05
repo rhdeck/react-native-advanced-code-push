@@ -1,5 +1,5 @@
 {
-  "name": "@react-native-kotlin/code-push",
+  "name": "@react-native-advanced/code-push",
   "version": "1.0.0",
   "description": "Code Push plugin for react-native-kotlin",
   "main": "index.js",
@@ -8,15 +8,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rhdeck/react-native-kotlin-code-push.git"
+    "url": "git+https://github.com/rhdeck/react-native-advanced-code-push.git"
   },
   "author": "Ray Deck",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rhdeck/react-native-kotlin-code-push/issues"
+    "url": "https://github.com/rhdeck/react-native-advanced-code-push/issues"
   },
-  "homepage": "https://github.com/rhdeck/react-native-kotlin-code-push#readme",
+  "homepage": "https://github.com/rhdeck/react-native-advanced-code-push#readme",
   "dependencies": {
+    "glob": "^7.1.6",
+    "plist": "^3.0.1",
     "xml2js": "^0.4.23"
   },
   "peerDependencies": {

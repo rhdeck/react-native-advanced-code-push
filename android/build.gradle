@@ -52,6 +52,6 @@ repositories {
 dependencies {
     //noinspection GradleDynamicVersion
     implementation 'com.facebook.react:react-native:+' // From node_modules
-    implementation project(path: ':react-native-kotlin_core')
+    implementation project(path: ':react-native-advanced_core')
     implementation project(path: ':react-native-code-push')
 }

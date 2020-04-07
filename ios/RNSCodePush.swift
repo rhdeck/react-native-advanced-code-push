@@ -1,7 +1,7 @@
 import ReactNativeSwiftRegistry
 @objc
 open class RNSCodePush:NSObject, RNSStartable {
-    @objc public static func runOnStart() -> Void {
+    @objc public static func runOnStart(_ application:UIApplication) -> Void {
         let _ = RNSMainRegistry.addEvent(type: "app.getSourceURL", key: "codepush") { data in
             #if DEBUG
             #else

@@ -1,4 +1,4 @@
-import ReactNativeSwiftRegistry
+import ReactNativeAdvancedRegistry
 @objc
 open class RNSCodePush:NSObject, RNSStartable {
     @objc public static func runOnStart(_ application:UIApplication) -> Void {

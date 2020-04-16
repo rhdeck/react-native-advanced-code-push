@@ -74,7 +74,9 @@ module.exports = {
               ["-s", "appcenter", "apps", "list", "--output", "json"],
               { stdio: "pipe", encoding: "utf8" }
             );
-            const a = JSON.parse(output.filter(Boolean).join(""));
+            const a = JSON.parse(
+              [output[0], output[1]].filter(Boolean).join("")
+            );
             if (a.length > 1) {
               console.log(
                 "Problem: appName not specified - try running with one of these names"
@@ -119,7 +121,9 @@ module.exports = {
           if (!output2) {
             throw "Could not find codepush stages for app " + appName;
           }
-          const a2 = JSON.parse(output2.filter(Boolean).join(""));
+          const a2 = JSON.parse(
+            [output2[0], output2[1]].filter(Boolean).join("")
+          );
           if (stage) {
             const myStage = a2.find(([thisStage, key]) => thisStage === stage);
             if (myStage) {

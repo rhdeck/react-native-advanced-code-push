@@ -87,7 +87,7 @@ module.exports = {
                     ({ name, owner: { name: ownerName } }) =>
                       "\t react-native set-code-push-key " +
                       (ios ? " --ios" : "") +
-                      (android ? " --ios" : "") +
+                      (android ? " --android" : "") +
                       " --appName " +
                       [ownerName, name].join("/")
                   )
@@ -144,7 +144,7 @@ module.exports = {
                     " --stage " +
                     stage +
                     (ios ? " --ios" : "") +
-                    (android ? " --ios" : "")
+                    (android ? " --android" : "")
                 )
                 .join("\n")
             );

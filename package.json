@@ -22,6 +22,6 @@
   "peerDependencies": {
     "appcenter-cli": "^2.4.0",
     "react-native-code-push": "^6.2.0",
-    "react-native-code-push-commands": "^1.0.0"
+    "react-native-code-push-commands": "^1.0.1"
   }
 }

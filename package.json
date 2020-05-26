@@ -1,6 +1,6 @@
 {
   "name": "@react-native-advanced/code-push",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Code Push plugin for react-native-kotlin",
   "main": "index.js",
   "scripts": {
